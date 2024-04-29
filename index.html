@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mediaqueries.css">
+    <title>Inicio</title>
+</head>
+
+<body>
+    <nav id="desktop__nav">
+        <div class="logo">Lucas J.</div>
+        <ul class="nav__links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+        </ul>
+    </nav>
+
+    <nav id="hamburger__nav">
+        <div class="logo">Lucas J.</div>
+        <div class="hamburger__menu">
+            <div class="hamburger__icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu__links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <!--Apresentação-->
+    <div class="container">
+        <div class="section-container">
+            <div class="img_header">
+                <img src="img/avatar.png" alt="">
+            </div>
+            <div class="sobre">
+                <h1>Prazer Sou Lucas José!</h1>
+                <h2>Aqui estão minha principais redes</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('assets/resume-example.pdf')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img src="img/linkedin.png" alt="My LinkedIn profile" class="icon"
+                        onclick="location.href='https://linkedin.com/'" />
+                    <img src="img/github.png" alt="My Github profile" class="icon"
+                        onclick="location.href='https://github.com/'" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="section-container section-container__sobre">
+            <div class=" img_header">
+                <img src="img/avatar__sobre.png" alt="">
+            </div>
+            <div class="sobre__header">
+
+
+                <h2>Falar pouco sobre mim !<h2>
+                        <h3>Aqui vou falar pouco sobre quem eu sou !</h3><br>
+                        <div class="article__container">
+                            <div class="article__img"><img src="img/education.png" alt="" class="icon"></div>
+                            <h4>Formado em:</h4>
+                            <p>Ciências da computação pela Universidade Cruzeiro do Sul !</p>
+                        </div><br>
+                        <div class="container__sobre">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ab quis at quaerat deserunt,
+                            qui ad et ipsum temporibus voluptas, similique soluta recusandae ea illo eum tempore.
+                            Laboriosam, sapiente totam?
+                        </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class=" section-container box__qualificacao">
+            <div class="box--title">Qualificação</div>
+            <div class="box--item">
+                <img>
+                <h3>HTML5</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script/script.js"></script>
+</body>
+
+</html>
